@@ -1,3 +1,4 @@
 server.*
 ssl/*
 conf.d/*
+docker-compose.yml
