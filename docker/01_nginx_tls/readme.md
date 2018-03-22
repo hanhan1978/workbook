@@ -64,3 +64,7 @@ services:
       - "./ssl:/etc/nginx/ssl"
       - "./conf.d:/etc/nginx/conf.d"
 ```
+
+> check redirection
+curl -I http://localhost
+curl --insecure  https://localhost
