@@ -1,5 +1,5 @@
 
-docker run -it ubuntu:18.04 bash
+docker run --rm -it ubuntu:18.04 bash
 
 > check node version. should be higher than 8.0.2
 
@@ -9,7 +9,14 @@ node -v
 
 apt list --installed | grep nodejs
 
+> install nodejs
+
+apt install nodejs npm wget
+
 > check npm, node path
+
+which node
+which npm
 
 > install n package
 
