@@ -1,13 +1,11 @@
 
-docker run --rm -it -p 80:80 ubuntu:18.04 bash
+vagrant up
 
 
 apt update
 
-apt install -y systemd apache2
 
-
-systemctl list-unit-files -t service
+systemctl list-unit-files -t service | grep enabled
 
 systemctl list-units -t service
 
