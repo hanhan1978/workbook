@@ -1,0 +1,14 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VM_BOX = "bento/ubuntu-16.04"
+VM_IP = "192.168.33.111"
+VM_HOSTNAME = "ubuntu.develop"
+
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = VM_BOX
+  config.vm.hostname = VM_HOSTNAME
+  config.vm.network :private_network, ip: VM_IP
+  config.vm.synced_folder ".", "/vagrant", :nfs => true
+end
